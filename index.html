@@ -17,130 +17,163 @@
   <body>
     <!-- Write your comments here -->
     <!-- each h2....hn is a subtopic after h1 which is like the subject of an essay-->
-    <h1>My Goals for the Year</h1>
-    <!--horizontal rule, this adds a horizontal line across the screen to separate sections-->
+    <header>
+      <h1>My Goals for the Year</h1>
+      <!--horizontal rule, this adds a horizontal line across the screen to separate sections-->
+      <hr />
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li>
+            <a href="#html">Learning HTML</a>
+          </li>
+          <li>
+            <a href="#vacation">Planning a Vacation</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
     <hr />
+    <main>
+      <!--creating sections-->
+      <article id="html">
+        <h2>Ready to learn HTML</h2>
+        <p>This is my first web page.</p>
+        <section>
+          <h3>HTML5</h3>
+          <img
+            src="img/html_logo_300x300.png"
+            alt="HTML5 Logo"
+            title="I am learning HTML5"
+            width="300"
+            height="300"
+          />
+          <figure>
+            <figcaption>An example of HTML5 code</figcaption>
+            <p>
+              <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+          </figure>
+        </section>
+        <section>
+          <h3>My Daily Schedule</h3>
+          <p>Let me tell you how I:</p>
+          <ol>
+            <!--<ol> is the ordered list, numbered and has less space inbetween lines than paragraph-->
+            <li>...I learn more about web dev.</li>
+            <!--& starts html entities, nbsp adds a space-->
+            <li>...I sleep</li>
+            <li>
+              ...I use resources from
+              <abbr title="Mozilla Developer Network">
+                <a href="https://developer.mozilla.org/en-US/">MDN</a> </abbr
+              >.
+              <!--adds link to website for MDN-->
+            </li>
+          </ol>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#html">Learning HTML</a>
-        </li>
-        <li>
-          <a href="#vacation">Planning a Vacation</a>
-        </li>
-      </ul>
-    </nav>
+          <!-- 
+            <aside>: Represents content that is tangentially related to the main content, such as a sidebar or a callout box.
+            <details>: Creates a disclosure widget that users can open or close to reveal additional information.
+            <summary>: Provides a summary or label for the <details> element, which is always visible and can be clicked to toggle the visibility of the details content.
+          -->
+          <aside>
+            <details>
+              <summary>
+                Guess the <mark> number of hours</mark> I sleep each day
+              </summary>
+              <p>
+                I go to bed at <time datetime="00:00">12 am</time> and wake up
+                at
+                <time datetime="08:00">8 am</time>
+              </p>
+            </details>
+          </aside>
+        </section>
+      </article>
 
-    <hr />
+      <hr />
 
-    <!--creating sections-->
-    <section id="html">
-      <h2>Ready to learn HTML</h2>
-      <p>This is my first web page.</p>
-      <img
-        src="img/html_logo_300x300.png"
-        alt="HTML5 Logo"
-        title="I am learning HTML5"
-        width="300"
-        height="300"
-      />
-      <figure>
-        <figcaption>An example of HTML5 code</figcaption>
+      <article id="vacation">
+        <h2>I am Also Planning A Vacation</h2>
         <p>
-          <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          I've been working hard and <em> really need a getaway to space</em>.
         </p>
-      </figure>
+        <!--using <em> emphasizes parts of the text, default behavior is italics-->
+        <p>
+          I live in <abbr title="Maryland">MD</abbr> so I want to visit the
+          beach
+        </p>
+        <section>
+          <h3>Places I'd Like to Visit</h3>
+          <ul>
+            <!--<ul> is an unordered list with bullet points instead-->
+            <li>
+              <p>I've heard good things about Mars.</p>
+              <figure>
+                <img
+                  src="img/mars-planet.png"
+                  alt="Planet Mars"
+                  title="I want to visit Mars"
+                  width="700"
+                  height="760"
+                  loading="lazy"
+                />
+                <!--loading="lazy" is used to load the image only when it is needed-->
+                <figcaption>Mars Space Resort</figcaption>
+              </figure>
+            </li>
+            <li>
+              <p>I've heard good things such as:</p>
+              <address>
+                Minions
+                <br />
+                Galaxy gas
+                <br />
+                09h 50m 19s and +14° 30' 26"
+              </address>
+              <figure>
+                <img
+                  src="img/10.png"
+                  alt="Mars Vacation"
+                  title="It's so fun!"
+                  width="1520"
+                  height="680"
+                  loading="lazy"
+                />
+                <figcaption>A Mars Vacation House</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </section>
 
-      <h3>My Daily Schedule</h3>
-      <p>Let me tell you how I:</p>
-      <ol>
-        <!--<ol> is the ordered list, numbered and has less space inbetween lines than paragraph-->
-        <li>...I learn more about web dev.</li>
-        <!--& starts html entities, nbsp adds a space-->
-        <li>...I sleep</li>
-        <li>
-          ...I use resources from
-          <abbr title="Mozilla Developer Network">
-            <a href="https://developer.mozilla.org/en-US/">MDN</a> </abbr
-          >.
-          <!--adds link to website for MDN-->
-        </li>
-      </ol>
-    </section>
+        <section>
+          <h3>Places I Want to Avoid</h3>
+          <dl>
+            <dt>South Pole</dt>
+            <dd>I hear this is <strong>cold!</strong></dd>
 
+            <dt>North Pole</dt>
+            <dd>This is also cold.</dd>
+
+            <dt>Mount Everest</dt>
+            <dd>This is also very cold.</dd>
+          </dl>
+        </section>
+      </article>
+      <!--Another inline element is <strong> which bolds the text-->
+    </main>
     <hr />
-
-    <section id="vacation">
-      <h2>I am Also Planning A Vacation</h2>
+    <footer>
       <p>
-        I've been working hard and <em> really need a getaway to space</em>.
-      </p>
-      <!--using <em> emphasizes parts of the text, default behavior is italics-->
-      <p>
-        I live in <abbr title="Maryland">MD</abbr> so I want to visit the beach
+        &lt;&lt;&lt; &copy; <a href="about.html">Alex Nguyen</a> &gt;&gt;&gt;
       </p>
 
-      <h3>Places I'd Like to Visit</h3>
-      <ul>
-        <!--<ul> is an unordered list with bullet points instead-->
-        <li>
-          <p>I've heard good things about Mars.</p>
-          <figure>
-            <img
-              src="img/mars-planet.png"
-              alt="Planet Mars"
-              title="I want to visit Mars"
-              width="700"
-              height="760"
-              loading="lazy"
-            />
-            <!--loading="lazy" is used to load the image only when it is needed-->
-            <figcaption>Mars Space Resort</figcaption>
-          </figure>
-        </li>
-        <li>
-          <p>I've heard good things such as:</p>
-          <address>
-            Minions
-            <br />
-            Galaxy gas
-            <br />
-            09h 50m 19s and +14° 30' 26"
-          </address>
-          <figure>
-            <img
-              src="img/10.png"
-              alt="Mars Vacation"
-              title="It's so fun!"
-              width="1520"
-              height="680"
-              loading="lazy"
-            />
-            <figcaption>A Mars Vacation House</figcaption>
-          </figure>
-        </li>
-      </ul>
-
-      <h3>Places I Want to Avoid</h3>
-      <dl>
-        <dt>South Pole</dt>
-        <dd>I hear this is <strong>cold!</strong></dd>
-
-        <dt>North Pole</dt>
-        <dd>This is also cold.</dd>
-
-        <dt>Mount Everest</dt>
-        <dd>This is also very cold.</dd>
-      </dl>
-    </section>
-    <!--Another inline element is <strong> which bolds the text-->
-
-    <hr />
-    &lt;&lt;&lt; &copy; <a href="about.html">Alex Nguyen</a> &gt;&gt;&gt;
-    <p>
-      <a href="#">Back to Top</a>
-    </p>
-    <!--more html entities that code for <<< copyright >>>>-->
+      <p>
+        <a href="#">Back to Top</a>
+      </p>
+      <!--more html entities that code for <<< copyright >>>>-->
+    </footer>
   </body>
 </html>
