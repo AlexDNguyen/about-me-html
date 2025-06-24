@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Alex Nguyen" />
+    <meta
+      name="description"
+      content="This page contains things I am learning how to create as I learn HTML"
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="capucinnoassasino.jpg" type="image/x-icon" />
+    <!--This is the icon of the website tab-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--This is where i link the main.css file where i have my css code to this index.html-->
+    <style></style>
+  </head>
+  <body>
+    <!-- Write your comments here -->
+    <!-- each h2....hn is a subtopic after h1 which is like the subject of an essay-->
+    <h1>My Goals for the Year</h1>
+    <!--horizontal rule, this adds a horizontal line across the screen to separate sections-->
+    <hr />
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#html">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#vacation">Planning a Vacation</a>
+        </li>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <!--creating sections-->
+    <section id="html">
+      <h2>Ready to learn HTML</h2>
+      <p>This is my first web page.</p>
+
+      <h3>My Daily Schedule</h3>
+      <p>Let me tell you how I:</p>
+      <ol>
+        <!--<ol> is the ordered list, numbered and has less space inbetween lines than paragraph-->
+        <li>...I learn more about web dev.</li>
+        <!--& starts html entities, nbsp adds a space-->
+        <li>...I sleep</li>
+        <li>
+          ...I use resources from
+          <abbr title="Mozilla Developer Network">
+            <a href="https://developer.mozilla.org/en-US/">MDN</a> </abbr
+          >.
+          <!--adds link to website for MDN-->
+        </li>
+      </ol>
+    </section>
+
+    <hr />
+
+    <section id="vacation">
+      <h2>I am Also Planning A Vacation</h2>
+      <p>
+        I've been working hard and <em> really need a getaway to space</em>.
+      </p>
+      <!--using <em> emphasizes parts of the text, default behavior is italics-->
+      <p>
+        I live in <abbr title="Maryland">MD</abbr> so I want to visit the beach
+      </p>
+
+      <h3>Place I'd Like to Visit</h3>
+      <ul>
+        <!--<ul> is an unordered list with bullet points instead-->
+        <li><p>I've heard good things about Mars.</p></li>
+        <li>
+          <p>I've heard good things such as:</p>
+          <address>
+            Minions
+            <br />
+            Galaxy gas
+            <br />
+            09h 50m 19s and +14° 30' 26"
+          </address>
+        </li>
+      </ul>
+
+      <h3>Places I Want to Avoid</h3>
+      <dl>
+        <dt>South Pole</dt>
+        <dd>I hear this is <strong>cold!</strong></dd>
+
+        <dt>North Pole</dt>
+        <dd>This is also cold.</dd>
+
+        <dt>Mount Everest</dt>
+        <dd>This is also very cold.</dd>
+      </dl>
+    </section>
+    <!--Another inline element is <strong> which bolds the text-->
+
+    <hr />
+    &lt;&lt;&lt; &copy; <a href="about.html">Alex Nguyen</a> &gt;&gt;&gt;
+    <p>
+      <a href="#">Back to Top</a>
+    </p>
+    <!--more html entities that code for <<< copyright >>>>-->
+  </body>
+</html>
