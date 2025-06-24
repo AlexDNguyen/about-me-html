@@ -38,6 +38,19 @@
     <section id="html">
       <h2>Ready to learn HTML</h2>
       <p>This is my first web page.</p>
+      <img
+        src="img/html_logo_300x300.png"
+        alt="HTML5 Logo"
+        title="I am learning HTML5"
+        width="300"
+        height="300"
+      />
+      <figure>
+        <figcaption>An example of HTML5 code</figcaption>
+        <p>
+          <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+        </p>
+      </figure>
 
       <h3>My Daily Schedule</h3>
       <p>Let me tell you how I:</p>
@@ -68,10 +81,24 @@
         I live in <abbr title="Maryland">MD</abbr> so I want to visit the beach
       </p>
 
-      <h3>Place I'd Like to Visit</h3>
+      <h3>Places I'd Like to Visit</h3>
       <ul>
         <!--<ul> is an unordered list with bullet points instead-->
-        <li><p>I've heard good things about Mars.</p></li>
+        <li>
+          <p>I've heard good things about Mars.</p>
+          <figure>
+            <img
+              src="img/mars-planet.png"
+              alt="Planet Mars"
+              title="I want to visit Mars"
+              width="700"
+              height="760"
+              loading="lazy"
+            />
+            <!--loading="lazy" is used to load the image only when it is needed-->
+            <figcaption>Mars Space Resort</figcaption>
+          </figure>
+        </li>
         <li>
           <p>I've heard good things such as:</p>
           <address>
@@ -81,6 +108,17 @@
             <br />
             09h 50m 19s and +14° 30' 26"
           </address>
+          <figure>
+            <img
+              src="img/10.png"
+              alt="Mars Vacation"
+              title="It's so fun!"
+              width="1520"
+              height="680"
+              loading="lazy"
+            />
+            <figcaption>A Mars Vacation House</figcaption>
+          </figure>
         </li>
       </ul>
 
